@@ -360,8 +360,8 @@ form input, form textarea{
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
-        padding: 2.5px;
+        font-size: 25px;
+        padding: 4px;
         background: transparent;
         border-radius: 15%;
         transition: background 0.5s, transform 0.5s;
@@ -373,8 +373,8 @@ form input, form textarea{
     .btn-group a{
         text-decoration: none;
         color: #fff;
-        font-size: 15px;
-        margin-top: 10px;
+        font-size: 20px;
+        margin-top: 20px;
         display: inline-block;
     }
     
