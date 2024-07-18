@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ca5e09ddad.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div id="header">
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm Nengi Pollyn</h1>
+                <h2>Computer/Software Engineer</h2>
+                <p>Student at The University of North Texas, majoring in Computer Engineering.</p>  
+                <div class="social-icons1">
+                    <a href="https://github.com/nengi-pol">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/nengi-pollyn-ab151028b">
+                        <i class="fa-brands fa-linkedin"></i>   
+                    </a>
+                    <a href="mailto:pollynnengi14@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="btn-group">
+                    <a href="./Nengi Pollyn resume.pdf" class="btn"> Resume</a>
+                    <a href="#contact" class="btn"> Contact</a>
+                </div>
+            </div>
+            </div>
+           
+        </div>
+       </div> 
+<!----about*----> 
+       <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/me.png" width="500" height="500" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a junior year computer engineering student with hands-on experience in software development, hardware design, and embedded systems. I have successfully completed multiple projects involving microcontrollers, circuit design, and programming in languages like C++, HTml, Python and many more. My coursework and practical knowledge have equipped me with a solid foundation to solve complex problems.</p>
+                    
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Program Development</span><br>Developing programs to solve specific and wide-range problems</li>
+                                <li><span>Web Development</span><br>Designing both Front-end and Back-end of websites</li>
+                                <li><span>Programming Languages:</span><br>C++, Python, HTML, Java, JavaScript, RUST, CSS</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>December 2023 - Current</span><br>Customer Service Representative, Achilles Security Services</li>
+                                <li><span>May 2024 - June, 2024</span><br>Artificial Intelligence/Computer Science Research, University of North Texas</li>
+                                <li><span>October 2022 - December 2022</span><br>Computer Science Teaching Assistant, Pan-Atlantic University</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023 - Current</span><br>University Of North Texas</li>
+                                <p>B.sc Computer Engineering - 3.85(GPA)</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+<!--Projects-->>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Artificial Intelligence Teaching Assistant Chatbot</h2>
+                <p>Made use of python and machine learning to develop a response-based chatbot for middle-school based on their lesson notes. I also inputted data into a JSON file and made use of tokenization and stemming to enable the program easily predict user questions and give accurate responses. I Trained the chatbot with data from the teacher lesson notes on multiple iterations and was able to get a low epoch value of 0.006 which signifies a high degree of response accuracy.
+                  </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>blahh blahh part 2</h2>
+                <p>apple, journey, blanket, moon, breeze, whisper, thunder, candle, bridge, melody, river, shadow, mountain, forest, ocean, sunrise, twilight, star, blossom, garden, dream, echo, feather, harmony, laughter, mist, treasure, rain, breeze, horizon, sparkle, rainbow, waterfall, memory, silence, galaxy, cloud, willow, petal, frost, ember, lantern, whisper, echo, twilight, dusk, dawn, whisper, song, wind, moonlight, star, autumn, glow, twilight, shadow, rain, whisper.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <h2>Personal Portfolio Website</h2>
+                <p>I Designed a user-friendly portfolio website showcasing my skills, projects, and contact information. I achieved a fully responsive design that maintains optimal performance across all devices, evidenced by a Google PageSpeed score of 95+ for both desktop and mobile views. I also Implemented contact forms using Web3Forms API and social media integration ensuring website users can get access to me directly.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----contact*----> 
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> pollynnengi14@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> +1 (832)728-4298</p>
+                <div class="social-icons">
+                    <a href="https://github.com/eniolabalogs"> <i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/nengi-pollyn-ab151028b"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:pollynnengi14@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+   <div class="copyright">
+        <p> © 2024 Nengi Pollyn | All Rights Reserved.</p>
+   </div> 
+</div> 
+
+       <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+       </script>
+
+       <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+       </script>
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyRLULs3-Yas7KDsrDItZ19meyi8SeqZBEirVmfDUaYne-6Nss__Gg9e7JBIoDQRjdn/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
